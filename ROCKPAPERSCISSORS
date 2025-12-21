@@ -1,0 +1,30 @@
+import random
+print(random.randrange(10,999,100))
+
+userGuess= str(input("Choose between rock, paper, or scissors").lower())
+c=random.randint(1,3)
+if c==1:
+    comp="rock"
+elif c==2:
+    comp="paper"
+else:
+    comp="scissors"
+    print("The Computer chose:",comp)
+    if userGuess=="rock" and comp=="scissors":
+        print("You win")
+    elif userGuess=="rock" and comp=="paper":
+        print("Computer wins")
+    elif userGuess=="rock" and comp=="rock":
+        print("It is a tie")
+    elif userGuess=="scissors" and comp=="paper":
+        print("You win")
+    elif userGuess=="scissors" and comp=="rock":
+        print("Computer wins")
+    elif userGuess=="scissors" and comp=="scissors":
+        print("It is a tie")
+    elif userGuess=="paper" and comp=="rock":
+        print("You win")
+    elif userGuess=="paper" and comp=="scissors":
+        print("Computer wins")
+    elif userGuess=="paper" and comp=="paper":
+        print("It is a tie")
