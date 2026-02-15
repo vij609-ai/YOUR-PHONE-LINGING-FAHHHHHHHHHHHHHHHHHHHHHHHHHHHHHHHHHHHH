@@ -1,0 +1,17 @@
+gdwed=int(input("Enter any number"))
+n1=0
+n2=1
+count=0
+if gdwed<=0:
+    print("Please enter a positive number")
+elif gdwed==1:
+    print("We cannot calculate the Fibonacci series for 1")
+    print(n1)
+else:
+    print("Fibonacci series is:",)
+    while count<gdwed:
+        print(n1)
+        nth= n1+n2
+        n1=n2
+        n2=nth
+        count=count+1
